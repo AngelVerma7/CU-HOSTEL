@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Types & Fees - CU Hostels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-home me-2"></i>CU Hostels
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facilities.html">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rules.html">Rules & Regulations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="rooms.html">Room Types & Fees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Wardens & Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Photo Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Room Types & Fee Structure</h1>
+                    <p>Choose the accommodation that suits your needs and budget - Available for both boys and girls hostels</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Types Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Single AC Room -->
+                <div class="col-lg-6">
+                    <div class="room-card premium">
+                        <div class="room-header">
+                            <h3><i class="fas fa-snowflake"></i> Single AC Room</h3>
+                            <div class="room-price">
+                                <span class="price">₹85,000</span>
+                                <span class="period">/year</span>
+                            </div>
+                        </div>
+                        <div class="room-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-bed fa-4x"></i>
+                                <p>Single AC Room</p>
+                            </div>
+                        </div>
+                        <div class="room-features">
+                            <h5>Features:</h5>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Private single bed</li>
+                                <li><i class="fas fa-check"></i> Air conditioning</li>
+                                <li><i class="fas fa-check"></i> Private bathroom</li>
+                                <li><i class="fas fa-check"></i> Study table & chair</li>
+                                <li><i class="fas fa-check"></i> Wardrobe & storage</li>
+                                <li><i class="fas fa-check"></i> High-speed Wi-Fi</li>
+                                <li><i class="fas fa-check"></i> Geyser & water cooler</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal" data-room="Single AC">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Single Non-AC Room -->
+                <div class="col-lg-6">
+                    <div class="room-card standard">
+                        <div class="room-header">
+                            <h3><i class="fas fa-fan"></i> Single Non-AC Room</h3>
+                            <div class="room-price">
+                                <span class="price">₹65,000</span>
+                                <span class="period">/year</span>
+                            </div>
+                        </div>
+                        <div class="room-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-bed fa-4x"></i>
+                                <p>Single Non-AC Room</p>
+                            </div>
+                        </div>
+                        <div class="room-features">
+                            <h5>Features:</h5>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Private single bed</li>
+                                <li><i class="fas fa-check"></i> Ceiling fan</li>
+                                <li><i class="fas fa-check"></i> Private bathroom</li>
+                                <li><i class="fas fa-check"></i> Study table & chair</li>
+                                <li><i class="fas fa-check"></i> Wardrobe & storage</li>
+                                <li><i class="fas fa-check"></i> High-speed Wi-Fi</li>
+                                <li><i class="fas fa-check"></i> Geyser & water cooler</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal" data-room="Single Non-AC">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Double AC Room -->
+                <div class="col-lg-6">
+                    <div class="room-card premium">
+                        <div class="room-header">
+                            <h3><i class="fas fa-snowflake"></i> Double AC Room</h3>
+                            <div class="room-price">
+                                <span class="price">₹55,000</span>
+                                <span class="period">/year</span>
+                            </div>
+                        </div>
+                        <div class="room-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-bed fa-4x"></i>
+                                <p>Double AC Room</p>
+                            </div>
+                        </div>
+                        <div class="room-features">
+                            <h5>Features:</h5>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Two single beds</li>
+                                <li><i class="fas fa-check"></i> Air conditioning</li>
+                                <li><i class="fas fa-check"></i> Shared bathroom</li>
+                                <li><i class="fas fa-check"></i> Two study tables & chairs</li>
+                                <li><i class="fas fa-check"></i> Individual wardrobes</li>
+                                <li><i class="fas fa-check"></i> High-speed Wi-Fi</li>
+                                <li><i class="fas fa-check"></i> Geyser & water cooler</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal" data-room="Double AC">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Double Non-AC Room -->
+                <div class="col-lg-6">
+                    <div class="room-card standard">
+                        <div class="room-header">
+                            <h3><i class="fas fa-fan"></i> Double Non-AC Room</h3>
+                            <div class="room-price">
+                                <span class="price">₹45,000</span>
+                                <span class="period">/year</span>
+                            </div>
+                        </div>
+                        <div class="room-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-bed fa-4x"></i>
+                                <p>Double Non-AC Room</p>
+                            </div>
+                        </div>
+                        <div class="room-features">
+                            <h5>Features:</h5>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Two single beds</li>
+                                <li><i class="fas fa-check"></i> Ceiling fans</li>
+                                <li><i class="fas fa-check"></i> Shared bathroom</li>
+                                <li><i class="fas fa-check"></i> Two study tables & chairs</li>
+                                <li><i class="fas fa-check"></i> Individual wardrobes</li>
+                                <li><i class="fas fa-check"></i> High-speed Wi-Fi</li>
+                                <li><i class="fas fa-check"></i> Geyser & water cooler</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal" data-room="Double Non-AC">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fee Structure Details -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2>Detailed Fee Structure</h2>
+                    <p>Transparent pricing with no hidden charges</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="fee-table-container">
+                        <table class="table table-striped table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Room Type</th>
+                                    <th>Accommodation Fee</th>
+                                    <th>Mess Fee</th>
+                                    <th>Security Deposit</th>
+                                    <th>Total (Per Year)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Single AC Room</strong></td>
+                                    <td>₹65,000</td>
+                                    <td>₹18,000</td>
+                                    <td>₹2,000</td>
+                                    <td><strong>₹85,000</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Single Non-AC Room</strong></td>
+                                    <td>₹47,000</td>
+                                    <td>₹18,000</td>
+                                    <td>₹2,000</td>
+                                    <td><strong>₹67,000</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Double AC Room</strong></td>
+                                    <td>₹37,000</td>
+                                    <td>₹18,000</td>
+                                    <td>₹2,000</td>
+                                    <td><strong>₹57,000</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Double Non-AC Room</strong></td>
+                                    <td>₹27,000</td>
+                                    <td>₹18,000</td>
+                                    <td>₹2,000</td>
+                                    <td><strong>₹47,000</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Information -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2>Payment Information</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="payment-card">
+                        <i class="fas fa-calendar-alt fa-3x mb-3"></i>
+                        <h5>Payment Schedule</h5>
+                        <ul>
+                            <li>Semester 1: 60% of annual fee</li>
+                            <li>Semester 2: 40% of annual fee</li>
+                            <li>Security deposit: At admission</li>
+                            <li>Late fee: ₹500 after due date</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="payment-card">
+                        <i class="fas fa-credit-card fa-3x mb-3"></i>
+                        <h5>Payment Methods</h5>
+                        <ul>
+                            <li>Online payment portal</li>
+                            <li>Demand draft</li>
+                            <li>Bank transfer</li>
+                            <li>Credit/Debit cards</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="payment-card">
+                        <i class="fas fa-undo fa-3x mb-3"></i>
+                        <h5>Refund Policy</h5>
+                        <ul>
+                            <li>Security deposit: Refundable</li>
+                            <li>Before semester start: 90% refund</li>
+                            <li>Within 1 month: 50% refund</li>
+                            <li>After 1 month: No refund</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Charges -->
+    <section class="py-4 bg-warning">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5><i class="fas fa-info-circle"></i> Additional Information</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Included in Fees:</strong> Electricity, Water, Wi-Fi, Basic Furniture, Security, Maintenance</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>Additional Charges:</strong> Laundry (₹300/month), Room Change (₹500), Damage Charges (As applicable)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Room Booking Inquiry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Student ID</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email *</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Room Type *</label>
+                                <select class="form-select" id="roomTypeSelect" required>
+                                    <option value="">Select Room Type</option>
+                                    <option value="Single AC">Single AC Room</option>
+                                    <option value="Single Non-AC">Single Non-AC Room</option>
+                                    <option value="Double AC">Double AC Room</option>
+                                    <option value="Double Non-AC">Double Non-AC Room</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Preferred Move-in Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Special Requirements</label>
+                                <textarea class="form-control" rows="3" placeholder="Any special requirements or preferences..."></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" form="bookingForm" class="btn btn-primary">Submit Inquiry</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>CU Hostels</h5>
+                    <p>Providing safe, comfortable, and modern accommodation for all students at Chandigarh University.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="contacts.html">Contact</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6>Contact Info</h6>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Chandigarh University, Mohali, Punjab</p>
+                        <p><i class="fas fa-phone"></i> +91-1234567890</p>
+                        <p><i class="fas fa-envelope"></i> hostels@cuchd.in</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row text-center">
+                <div class="col-12">
+                    <p>&copy; 2025 Chandigarh University Hostels. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>

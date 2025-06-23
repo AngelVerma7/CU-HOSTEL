@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - CU Hostels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-home me-2"></i>CU Hostels
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facilities.html">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rules.html">Rules & Regulations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html">Room Types & Fees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Wardens & Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Photo Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="faq.html">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Frequently Asked Questions</h1>
+                    <p>Find answers to common questions about CU Girls Hostels</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search FAQ -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-lg" id="faqSearch" placeholder="Search frequently asked questions...">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2>Browse by Category</h2>
+                    <p>Select a category to find relevant questions</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <nav class="faq-nav">
+                        <div class="nav nav-pills justify-content-center" id="faq-tab" role="tablist">
+                            <button class="nav-link active" id="general-tab" data-bs-toggle="pill" data-bs-target="#general-faq">General</button>
+                            <button class="nav-link" id="admission-tab" data-bs-toggle="pill" data-bs-target="#admission-faq">Admission</button>
+                            <button class="nav-link" id="facilities-tab" data-bs-toggle="pill" data-bs-target="#facilities-faq">Facilities</button>
+                            <button class="nav-link" id="rules-tab" data-bs-toggle="pill" data-bs-target="#rules-faq">Rules</button>
+                            <button class="nav-link" id="fees-tab" data-bs-toggle="pill" data-bs-target="#fees-faq">Fees</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="tab-content" id="faq-tabContent">
+                <!-- General FAQ -->
+                <div class="tab-pane fade show active" id="general-faq">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="accordion" id="generalAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#general1">
+                                            What are the hostel timings?
+                                        </button>
+                                    </h2>
+                                    <div id="general1" class="accordion-collapse collapse show" data-bs-parent="#generalAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Hostel Gate Timings:</strong><br>
+                                            • Weekdays: 5:30 AM - 10:00 PM<br>
+                                            • Saturday: 5:30 AM - 11:00 PM<br>
+                                            • Sunday & Holidays: 6:00 AM - 10:00 PM<br><br>
+                                            Late entry requires prior permission from the warden and is limited to 2 times per month.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general2">
+                                            What should I bring to the hostel?
+                                        </button>
+                                    </h2>
+                                    <div id="general2" class="accordion-collapse collapse" data-bs-parent="#generalAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Essential Items to Bring:</strong><br>
+                                            • Personal clothing and toiletries<br>
+                                            • Bed sheets, pillows, and blankets<br>
+                                            • Study materials and stationery<br>
+                                            • Personal laptop/computer<br>
+                                            • Medical prescriptions and first aid<br>
+                                            • Identity documents and photographs<br><br>
+                                            <strong>Items Provided:</strong> Bed, mattress, study table, chair, wardrobe, and basic furniture.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general3">
+                                            Is Wi-Fi available in all rooms?
+                                        </button>
+                                    </h2>
+                                    <div id="general3" class="accordion-collapse collapse" data-bs-parent="#generalAccordion">
+                                        <div class="accordion-body">
+                                            Yes, high-speed Wi-Fi (100+ Mbps) is available throughout the hostel including all rooms. Each room also has ethernet ports for wired connections. The internet service is available 24/7 at no additional cost.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general4">
+                                            What security measures are in place?
+                                        </button>
+                                    </h2>
+                                    <div id="general4" class="accordion-collapse collapse" data-bs-parent="#generalAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Security Features:</strong><br>
+                                            • 24/7 CCTV surveillance<br>
+                                            • Biometric entry system<br>
+                                            • Round-the-clock security guards<br>
+                                            • Visitor management system<br>
+                                            • Emergency communication systems<br>
+                                            • Restricted access to residential floors<br>
+                                            • Regular security patrols
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general5">
+                                            Can I change my room after allocation?
+                                        </button>
+                                    </h2>
+                                    <div id="general5" class="accordion-collapse collapse" data-bs-parent="#generalAccordion">
+                                        <div class="accordion-body">
+                                            Room changes are possible but require a valid reason and written application to the warden. Common reasons include medical issues, compatibility problems with roommates, or academic requirements. Administrative charges may apply for voluntary changes, and you must vacate the current room within 48 hours of approval.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Admission FAQ -->
+                <div class="tab-pane fade" id="admission-faq">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="accordion" id="admissionAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#admission1">
+                                            How do I apply for hostel accommodation?
+                                        </button>
+                                    </h2>
+                                    <div id="admission1" class="accordion-collapse collapse show" data-bs-parent="#admissionAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Application Process:</strong><br>
+                                            1. Submit online application through university portal<br>
+                                            2. Pay application fee and security deposit<br>
+                                            3. Submit required documents (ID proof, medical certificate, passport photos)<br>
+                                            4. Attend interview/orientation if required<br>
+                                            5. Receive room allocation confirmation<br>
+                                            6. Complete check-in formalities<br><br>
+                                            <strong>Timeline:</strong> Apply at least 30 days before intended move-in date.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#admission2">
+                                            What documents are required for admission?
+                                        </button>
+                                    </h2>
+                                    <div id="admission2" class="accordion-collapse collapse" data-bs-parent="#admissionAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Required Documents:</strong><br>
+                                            • University admission letter<br>
+                                            • Identity proof (Aadhar Card/Passport)<br>
+                                            • Address proof<br>
+                                            • Medical fitness certificate<br>
+                                            • Passport size photographs (6 copies)<br>
+                                            • Parent/Guardian consent letter<br>
+                                            • Academic transcripts<br>
+                                            • Caste certificate (if applicable)<br>
+                                            • Income certificate (for fee concessions)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#admission3">
+                                            Is there a waiting list for hostel rooms?
+                                        </button>
+                                    </h2>
+                                    <div id="admission3" class="accordion-collapse collapse" data-bs-parent="#admissionAccordion">
+                                        <div class="accordion-body">
+                                            Yes, during peak admission periods, there may be a waiting list. Priority is given based on:
+                                            <br>• Distance from home location<br>
+                                            • Academic merit<br>
+                                            • Application date and time<br>
+                                            • Special circumstances (medical, financial)<br><br>
+                                            Students on the waiting list are notified as soon as rooms become available.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#admission4">
+                                            Can I choose my roommate?
+                                        </button>
+                                    </h2>
+                                    <div id="admission4" class="accordion-collapse collapse" data-bs-parent="#admissionAccordion">
+                                        <div class="accordion-body">
+                                            Yes, you can request a specific roommate during the application process. Both students must mention each other's names in their applications. However, final allocation depends on availability and administrative approval. Roommate requests are accommodated on a first-come, first-served basis.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facilities FAQ -->
+                <div class="tab-pane fade" id="facilities-faq">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="accordion" id="facilitiesAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#facilities1">
+                                            What are the mess timings and menu?
+                                        </button>
+                                    </h2>
+                                    <div id="facilities1" class="accordion-collapse collapse show" data-bs-parent="#facilitiesAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Mess Timings:</strong><br>
+                                            • Breakfast: 7:00 AM - 9:30 AM<br>
+                                            • Lunch: 12:00 PM - 2:30 PM<br>
+                                            • Evening Snacks: 4:30 PM - 6:00 PM (Weekdays)<br>
+                                            • Dinner: 7:30 PM - 10:00 PM<br><br>
+                                            <strong>Menu:</strong> Balanced vegetarian and non-vegetarian meals with regional and North Indian cuisine. Special dietary requirements can be accommodated with prior notice.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#facilities2">
+                                            Are laundry services available?
+                                        </button>
+                                    </h2>
+                                    <div id="facilities2" class="accordion-collapse collapse" data-bs-parent="#facilitiesAccordion">
+                                        <div class="accordion-body">
+                                            Yes, comprehensive laundry services are available:<br>
+                                            • Self-service washing machines and dryers<br>
+                                            • Iron and ironing boards on each floor<br>
+                                            • Professional laundry service (charges apply)<br>
+                                            • Laundry soap and detergent vending machines<br><br>
+                                            Self-service is free, while professional service costs ₹300 per month.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#facilities3">
+                                            What medical facilities are available?
+                                        </button>
+                                    </h2>
+                                    <div id="facilities3" class="accordion-collapse collapse" data-bs-parent="#facilitiesAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Medical Support:</strong><br>
+                                            • On-campus medical center with qualified staff<br>
+                                            • 24/7 first aid availability<br>
+                                            • Emergency medical assistance<br>
+                                            • Tie-up with nearby hospitals<br>
+                                            • Medical insurance guidance<br>
+                                            • Mental health counseling services<br><br>
+                                            A qualified medical assistant is available round the clock for emergencies.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#facilities4">
+                                            Can I use the gym and recreation facilities?
+                                        </button>
+                                    </h2>
+                                    <div id="facilities4" class="accordion-collapse collapse" data-bs-parent="#facilitiesAccordion">
+                                        <div class="accordion-body">
+                                            Absolutely! All hostel residents have free access to:<br>
+                                            • Fully equipped gymnasium<br>
+                                            • Yoga and meditation room<br>
+                                            • Indoor games room (table tennis, carrom, chess)<br>
+                                            • Library and study areas<br>
+                                            • TV lounge and recreation room<br>
+                                            • Terrace garden<br><br>
+                                            Some facilities have specific timings, which are posted on the notice boards.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rules FAQ -->
+                <div class="tab-pane fade" id="rules-faq">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="accordion" id="rulesAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#rules1">
+                                            What items are prohibited in the hostel?
+                                        </button>
+                                    </h2>
+                                    <div id="rules1" class="accordion-collapse collapse show" data-bs-parent="#rulesAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Prohibited Items:</strong><br>
+                                            • Alcohol and tobacco products<br>
+                                            • Illegal drugs or substances<br>
+                                            • Weapons or sharp objects<br>
+                                            • Cooking appliances (except permitted ones like electric kettle)<br>
+                                            • Pets or animals<br>
+                                            • Inflammable materials<br>
+                                            • High-power electrical appliances<br><br>
+                                            Violation of these rules may result in disciplinary action.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rules2">
+                                            What are the visitor rules?
+                                        </button>
+                                    </h2>
+                                    <div id="rules2" class="accordion-collapse collapse" data-bs-parent="#rulesAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Visitor Guidelines:</strong><br>
+                                            • Weekdays: 4:00 PM - 8:00 PM<br>
+                                            • Weekends: 10:00 AM - 8:00 PM<br>
+                                            • All visitors must register at reception<br>
+                                            • Valid ID proof mandatory<br>
+                                            • Maximum 2 visitors per resident<br>
+                                            • Visitors restricted to lobby and visitor rooms<br>
+                                            • No visitors during exam periods<br>
+                                            • Overnight stay requires special permission
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rules3">
+                                            What happens if I break hostel rules?
+                                        </button>
+                                    </h2>
+                                    <div id="rules3" class="accordion-collapse collapse" data-bs-parent="#rulesAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Disciplinary Actions:</strong><br>
+                                            • <strong>First Warning:</strong> Verbal warning for minor violations<br>
+                                            • <strong>Written Warning:</strong> Formal written warning<br>
+                                            • <strong>Fine:</strong> Monetary penalty for repeated violations<br>
+                                            • <strong>Suspension:</strong> Temporary suspension for serious misconduct<br>
+                                            • <strong>Rustication:</strong> Permanent expulsion for major violations<br><br>
+                                            Students have the right to appeal disciplinary decisions through the hostel committee.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rules4">
+                                            Can I leave the hostel during study hours?
+                                        </button>
+                                    </h2>
+                                    <div id="rules4" class="accordion-collapse collapse" data-bs-parent="#rulesAccordion">
+                                        <div class="accordion-body">
+                                            Study hours are from 8:00 PM to 11:00 PM, during which silence is mandatory in residential areas. You can leave the hostel during this time, but you must inform the floor supervisor and return before the hostel closing time. Academic activities and library visits are encouraged during these hours.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fees FAQ -->
+                <div class="tab-pane fade" id="fees-faq">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="accordion" id="feesAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fees1">
+                                            What is included in the hostel fees?
+                                        </button>
+                                    </h2>
+                                    <div id="fees1" class="accordion-collapse collapse show" data-bs-parent="#feesAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Included in Hostel Fees:</strong><br>
+                                            • Accommodation charges<br>
+                                            • Mess fees (4 meals per day)<br>
+                                            • Electricity and water charges<br>
+                                            • Wi-Fi internet access<br>
+                                            • Basic furniture and fixtures<br>
+                                            • Security services<br>
+                                            • Maintenance and housekeeping<br>
+                                            • Access to all common facilities<br><br>
+                                            <strong>Additional Charges:</strong> Laundry service (₹300/month), room change fee (₹500), damage charges (as applicable)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fees2">
+                                            When are the fee payment deadlines?
+                                        </button>
+                                    </h2>
+                                    <div id="fees2" class="accordion-collapse collapse" data-bs-parent="#feesAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Payment Schedule:</strong><br>
+                                            • <strong>Semester 1:</strong> 60% of annual fee (due by July 31st)<br>
+                                            • <strong>Semester 2:</strong> 40% of annual fee (due by December 31st)<br>
+                                            • <strong>Security Deposit:</strong> At the time of admission<br>
+                                            • <strong>Late Fee:</strong> ₹500 charged after due date<br><br>
+                                            Payment reminders are sent via email and SMS before due dates.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fees3">
+                                            What are the refund policies?
+                                        </button>
+                                    </h2>
+                                    <div id="fees3" class="accordion-collapse collapse" data-bs-parent="#feesAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Refund Policy:</strong><br>
+                                            • <strong>Security Deposit:</strong> Fully refundable (minus any damage charges)<br>
+                                            • <strong>Before Semester Start:</strong> 90% refund of fees paid<br>
+                                            • <strong>Within 1 Month:</strong> 50% refund of fees paid<br>
+                                            • <strong>After 1 Month:</strong> No refund of accommodation fees<br>
+                                            • <strong>Mess Fees:</strong> Prorated refund for unused portion<br><br>
+                                            Refund processing takes 30-45 working days after approval.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fees4">
+                                            Are there any scholarships or fee concessions?
+                                        </button>
+                                    </h2>
+                                    <div id="fees4" class="accordion-collapse collapse" data-bs-parent="#feesAccordion">
+                                        <div class="accordion-body">
+                                            <strong>Available Concessions:</strong><br>
+                                            • Merit-based scholarships (up to 25% fee waiver)<br>
+                                            • Need-based financial assistance<br>
+                                            • SC/ST category concessions as per government norms<br>
+                                            • Economically weaker section (EWS) benefits<br>
+                                            • Special concessions for orphan students<br><br>
+                                            Students must provide relevant documentation and apply through the scholarship committee.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Have Questions -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="help-section">
+                        <h3>Still Have Questions?</h3>
+                        <p>Can't find what you're looking for? Our support team is here to help!</p>
+                        <div class="help-options">
+                            <a href="contacts.html" class="btn btn-primary me-3">
+                                <i class="fas fa-phone"></i> Contact Us
+                            </a>
+                            <a href="mailto:hostels@cuchd.in" class="btn btn-outline-primary">
+                                <i class="fas fa-envelope"></i> Email Support
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>CU Hostels</h5>
+                    <p>Providing safe, comfortable, and modern accommodation for all students at Chandigarh University.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="contacts.html">Contact</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6>Contact Info</h6>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Chandigarh University, Mohali, Punjab</p>
+                        <p><i class="fas fa-phone"></i> +91-1234567890</p>
+                        <p><i class="fas fa-envelope"></i> hostels@cuchd.in</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row text-center">
+                <div class="col-12">
+                    <p>&copy; 2025 Chandigarh University Hostels. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ Search functionality
+        document.getElementById('faqSearch').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            
+            accordionItems.forEach(item => {
+                const button = item.querySelector('.accordion-button');
+                const body = item.querySelector('.accordion-body');
+                const buttonText = button.textContent.toLowerCase();
+                const bodyText = body.textContent.toLowerCase();
+                
+                if (buttonText.includes(searchTerm) || bodyText.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = searchTerm === '' ? 'block' : 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

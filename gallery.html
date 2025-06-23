@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - CU Hostels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-home me-2"></i>CU Hostels
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facilities.html">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rules.html">Rules & Regulations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html">Room Types & Fees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Wardens & Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Photo Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Photo Gallery</h1>
+                    <p>Take a virtual tour of our beautiful hostel facilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Carousel -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-placeholder">
+                                    <i class="fas fa-building fa-8x"></i>
+                                    <h3>Hostel Exterior</h3>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h5>Modern Architecture</h5>
+                                    <p>Contemporary design with safety and comfort in mind</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-placeholder">
+                                    <i class="fas fa-bed fa-8x"></i>
+                                    <h3>Comfortable Rooms</h3>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h5>Well-Furnished Rooms</h5>
+                                    <p>Spacious rooms with all necessary amenities</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-placeholder">
+                                    <i class="fas fa-utensils fa-8x"></i>
+                                    <h3>Dining Hall</h3>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h5>Hygienic Mess</h5>
+                                    <p>Clean and spacious dining facility</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-placeholder">
+                                    <i class="fas fa-dumbbell fa-8x"></i>
+                                    <h3>Recreation Area</h3>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h5>Fitness & Recreation</h5>
+                                    <p>Modern gym and recreational facilities</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Categories -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2>Explore Our Facilities</h2>
+                    <p>Browse through different categories to see what we offer</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <nav class="gallery-nav">
+                        <div class="nav nav-pills justify-content-center" id="gallery-tab" role="tablist">
+                            <button class="nav-link active" id="rooms-tab" data-bs-toggle="pill" data-bs-target="#rooms-gallery">Rooms</button>
+                            <button class="nav-link" id="common-tab" data-bs-toggle="pill" data-bs-target="#common-gallery">Common Areas</button>
+                            <button class="nav-link" id="dining-tab" data-bs-toggle="pill" data-bs-target="#dining-gallery">Dining</button>
+                            <button class="nav-link" id="recreation-tab" data-bs-toggle="pill" data-bs-target="#recreation-gallery">Recreation</button>
+                            <button class="nav-link" id="exterior-tab" data-bs-toggle="pill" data-bs-target="#exterior-gallery">Campus</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="tab-content" id="gallery-tabContent">
+                <!-- Rooms Gallery -->
+                <div class="tab-pane fade show active" id="rooms-gallery">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Single AC Room" data-description="Comfortable single occupancy room with air conditioning">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-bed fa-4x"></i>
+                                    <h5>Single AC Room</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Double Room" data-description="Spacious double occupancy room with modern amenities">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-bed fa-4x"></i>
+                                    <h5>Double Room</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Study Area" data-description="Individual study spaces in each room">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-desk fa-4x"></i>
+                                    <h5>Study Area</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Bathroom" data-description="Clean and modern bathroom facilities">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-bath fa-4x"></i>
+                                    <h5>Bathroom</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Wardrobe" data-description="Ample storage space with built-in wardrobes">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-door-open fa-4x"></i>
+                                    <h5>Storage</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Balcony View" data-description="Rooms with beautiful campus views">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-eye fa-4x"></i>
+                                    <h5>Room View</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Common Areas Gallery -->
+                <div class="tab-pane fade" id="common-gallery">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Lobby Area" data-description="Spacious and welcoming entrance lobby">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-couch fa-4x"></i>
+                                    <h5>Lobby</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="TV Lounge" data-description="Comfortable TV lounge for relaxation">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-tv fa-4x"></i>
+                                    <h5>TV Lounge</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Library" data-description="Quiet study library with extensive collection">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-book fa-4x"></i>
+                                    <h5>Library</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Laundry Room" data-description="Modern laundry facilities">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-tshirt fa-4x"></i>
+                                    <h5>Laundry</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Corridor" data-description="Well-lit and spacious corridors">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-arrows-alt-h fa-4x"></i>
+                                    <h5>Corridors</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Visitor Area" data-description="Dedicated area for meeting visitors">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-users fa-4x"></i>
+                                    <h5>Visitor Area</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dining Gallery -->
+                <div class="tab-pane fade" id="dining-gallery">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Dining Hall" data-description="Spacious dining hall with modern seating">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-utensils fa-4x"></i>
+                                    <h5>Dining Hall</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Kitchen" data-description="Hygienic and modern kitchen facilities">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-fire fa-4x"></i>
+                                    <h5>Kitchen</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Food Counter" data-description="Organized food serving area">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-receipt fa-4x"></i>
+                                    <h5>Food Counter</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Snack Area" data-description="Casual dining area for snacks">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-coffee fa-4x"></i>
+                                    <h5>Snack Area</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Dining Tables" data-description="Comfortable seating arrangements">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-chair fa-4x"></i>
+                                    <h5>Seating</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Water Station" data-description="Clean drinking water facilities">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-tint fa-4x"></i>
+                                    <h5>Water Station</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recreation Gallery -->
+                <div class="tab-pane fade" id="recreation-gallery">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Gymnasium" data-description="Fully equipped modern gym">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-dumbbell fa-4x"></i>
+                                    <h5>Gymnasium</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Yoga Room" data-description="Peaceful space for yoga and meditation">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-spa fa-4x"></i>
+                                    <h5>Yoga Room</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Games Room" data-description="Indoor games and recreational activities">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-gamepad fa-4x"></i>
+                                    <h5>Games Room</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Reading Corner" data-description="Quiet reading and study spaces">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-book-reader fa-4x"></i>
+                                    <h5>Reading Corner</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Terrace Garden" data-description="Beautiful terrace garden for relaxation">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-seedling fa-4x"></i>
+                                    <h5>Terrace Garden</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Music Room" data-description="Space for musical activities and practice">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-music fa-4x"></i>
+                                    <h5>Music Room</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exterior Gallery -->
+                <div class="tab-pane fade" id="exterior-gallery">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Main Entrance" data-description="Grand entrance with security checkpoint">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-door-open fa-4x"></i>
+                                    <h5>Main Entrance</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Campus View" data-description="Beautiful campus surroundings">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-university fa-4x"></i>
+                                    <h5>Campus View</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Parking Area" data-description="Secure parking facilities">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-parking fa-4x"></i>
+                                    <h5>Parking</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Garden Area" data-description="Landscaped gardens around the hostel">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-tree fa-4x"></i>
+                                    <h5>Garden</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Night View" data-description="Hostel illuminated during evening">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-moon fa-4x"></i>
+                                    <h5>Night View</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-title="Security Post" data-description="24/7 security checkpoint">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-shield-alt fa-4x"></i>
+                                    <h5>Security</h5>
+                                </div>
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalTitle">Image Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="modal-image-placeholder">
+                        <i class="fas fa-image fa-8x"></i>
+                        <h3 id="modalImageTitle">Image Placeholder</h3>
+                    </div>
+                    <p id="imageModalDescription" class="mt-3">Image description will appear here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>CU Hostels</h5>
+                    <p>Providing safe, comfortable, and modern accommodation for all students at Chandigarh University.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="contacts.html">Contact</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6>Contact Info</h6>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Chandigarh University, Mohali, Punjab</p>
+                        <p><i class="fas fa-phone"></i> +91-1234567890</p>
+                        <p><i class="fas fa-envelope"></i> hostels@cuchd.in</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row text-center">
+                <div class="col-12">
+                    <p>&copy; 2025 Chandigarh University Hostels. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
