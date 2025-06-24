@@ -1411,7 +1411,7 @@ footer p, footer li {
     }
 }
 
-
+/* emergency card Small Card Styles */
 .small-card {
     min-height: 170px;
     transition: all 0.3s ease;
