@@ -1412,4 +1412,16 @@ footer p, footer li {
 }
 
 
+.small-card {
+    min-height: 170px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    background-color: #ffebee;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.small-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
 
