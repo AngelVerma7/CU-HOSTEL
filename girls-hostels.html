@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girls Hostels - CU</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .intro-heading {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #d7232e;
+    }
+
+    .intro-sub {
+      color: #d7232e;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    /* .hostel-card {
+      padding: 2.5rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      background-color: #fff;
+      height: 100%;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hostel-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .hostel-title {
+      color: #c21807;
+      font-weight: 600;
+    } */
+
+    .hostel-card {
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.hostel-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: #2c2021;
+  box-shadow: 0 10px 25px rgba(215, 35, 46, 0.2);
+}
+
+.hostel-title i {
+  transition: transform 0.3s ease;
+}
+
+.hostel-card:hover .hostel-title i {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.btn-outline-danger:hover {
+  background-color: #2e1f20;
+  color: white;
+  border-color: #1d1717;
+}
+
+
+    .hostel-icon {
+      color: #c21807;
+      margin-right: 8px;
+    }
+.lead {
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;          /* Slightly larger */
+  font-weight: 500;           /* Medium-bold */
+  color: #333333;             /* Soft black for readability */
+  line-height: 1.7;           /* More breathing space */
+  letter-spacing: 0.3px;      /* Subtle letter spacing */
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">
+      <i class="fas fa-home me-2"></i>CU Hostels
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+        <li class="nav-item"><a class="nav-link" href="rules.html">Rules & Regulations</a></li>
+        <li class="nav-item"><a class="nav-link" href="rooms.html">Room Types & Fees</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacts.html">Wardens & Contacts</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Photo Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+      </ul>
+    </div> -->
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container py-5 mt-5">
+  <div class="text-center mb-5">
+    <h1 class="intro-heading">CU Girls Hostel</h1>
+    <p class="lead">
+      University experience is an important milestone in an individual’s life. This time period will always be remembered in your life bundled with many exciting and sweet memories.
+    </p>
+    <p class="lead">
+      Living in a hostel requires a high degree of integrity, consciousness, cooperation, tolerance and discipline. Students who successfully complete their stay in the hostel become independent and responsible human beings.
+    </p>
+    <p class="lead">
+      Hostels at Chandigarh University can rightly be called a “home away from home”. Our hostels provide the most conducive environment for students’ holistic development. The rooms are well-furnished and equipped with modern amenities and hygienic conditions.
+    </p>
+    <p class="intro-sub">Chandigarh University has named its Girl’s Hostels on the name of some iconic personalities & places:</p>
+  </div>
+
+  <div class="row g-4">
+    <!-- Hostel Cards -->
+    <div class="col-md-6">
+      <div class="hostel-card">
+        <h5 class="hostel-title"><i class="fas fa-water hostel-icon"></i>Sukhna Hostel</h5>
+        <p>A peaceful hostel inspired by the charm of Sukhna Lake.</p>
+        <button class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#sukhnaModal">Read More</button>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="hostel-card">
+        <h5 class="hostel-title"><i class="fas fa-feather-alt hostel-icon"></i>Tagore Hostel</h5>
+        <p>Named after Rabindranath Tagore, promoting intellect and creativity.</p>
+        <button class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#tagoreModal">Read More</button>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="hostel-card">
+        <h5 class="hostel-title"><i class="fas fa-hand-holding-heart hostel-icon"></i>Gobind Hostel</h5>
+        <p>A warm, family-like hostel offering comfort and strong values.</p>
+        <button class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#gobindModal">Read More</button>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="hostel-card">
+        <h5 class="hostel-title"><i class="fas fa-mountain hostel-icon"></i>Shivalik Hostel</h5>
+        <p>Named after Shivalik Hills, symbolizing high aspirations and growth.</p>
+        <button class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#shivalikModal">Read More</button>
+      </div>
+    </div>
+
+<!-- Le Corbusier Hostel (Centered) -->
+<div class="col-12 d-flex justify-content-center">
+  <div class="hostel-card" style="max-width: 700px;">
+    <h5 class="hostel-title"><i class="fas fa-drafting-compass hostel-icon"></i>Le Corbusier Hostel</h5>
+    <p>Named after the renowned architect “Le Corbusier.” Just as he redefined urban spaces, this hostel inspires girls to break boundaries, cultivate discipline, and shape their future with a strong foundation.</p>
+    <button class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#shivalikModal">Read More</button>
+  </div>
+</div>
+
+
+  <div class="text-center mt-5">
+    <a href="index.html" class="btn btn-outline-dark">← Back to Home</a>
+  </div>
+</div>
+
+<!-- Modals -->
+<div class="modal fade" id="sukhnaModal" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content p-4">
+    <div class="modal-header"><h5 class="modal-title text-danger">Sukhna Hostel</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+    <div class="modal-body">Based on the beautiful and ever-charming ‘Sukhna Lake’, the name reflects the calm yet deep & strong characteristics of girls. The Hostel has a friendly environment with all the necessary amenities to provide a home-like experience.</div>
+  </div></div>
+</div>
+
+<div class="modal fade" id="tagoreModal" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content p-4">
+    <div class="modal-header"><h5 class="modal-title text-danger">Tagore Hostel</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+    <div class="modal-body">Named after the Noble Laureate and versatile genius, the creator of our national anthem—Rabindranath Tagore that instills the qualities of self-reliance in the students.</div>
+  </div></div>
+</div>
+
+<div class="modal fade" id="gobindModal" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content p-4">
+    <div class="modal-header"><h5 class="modal-title text-danger">Gobind Hostel</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+    <div class="modal-body">Our hostel offers a warm, welcoming, and home-like environment, complete with all essential facilities. It nurtures strong values and comfort under a watchful and caring presence.</div>
+  </div></div>
+</div>
+
+<div class="modal fade" id="shivalikModal" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content p-4">
+    <div class="modal-header"><h5 class="modal-title text-danger">Shivalik Hostel</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+    <div class="modal-body">Keeping the aspirations as high as Shivalik Hills itself, the Hostel maintains its honor and pride. Hostelers are encouraged to be thoughtful and dream to fly higher and achieve their goals.</div>
+  </div></div>
+</div>
+
+<div class="modal fade" id="corbusierModal" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content p-4">
+    <div class="modal-header"><h5 class="modal-title text-danger">Le Corbusier Hostel</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+    <div class="modal-body">Named after the renowned architect “Le Corbusier.” Just as he redefined urban spaces, this hostel inspires girls to break boundaries, cultivate discipline, and shape their future with a strong foundation.</div>
+  </div></div>
+</div>
+
+<!-- Footer -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
