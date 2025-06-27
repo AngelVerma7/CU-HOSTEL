@@ -1352,6 +1352,68 @@ footer p, footer li {
     transform: translateX(0);
 }
 
+/* Loading Screen */
+/* .loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #100307, #a61530);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    flex-direction: column;
+}
+
+.loading-animation {
+    text-align: center;
+}
+
+.cu-logo-animation {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #5c1a24;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.cu-logo-animation .cu-text {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.rotating-border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #d3203c;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+    z-index: 1;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+} */
+
+
 /* Loading Animation */
 .loading {
     display: inline-block;
@@ -1423,5 +1485,16 @@ footer p, footer li {
 .small-card:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
+}
+
+/* conatcat univeristy authority image placeholder  */
+.autho-img {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: white;
+
+    border: none; /* or remove the border property */
 }
 
