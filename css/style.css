@@ -852,6 +852,10 @@ p {
     margin-bottom: 20px;
     font-size: 0.9rem;
 }
+.warden-card {
+  height: 100%;
+}
+
 
 .contact-details p {
     margin-bottom: 8px;
@@ -1497,4 +1501,6 @@ footer p, footer li {
 
     border: none; /* or remove the border property */
 }
+
+
 
